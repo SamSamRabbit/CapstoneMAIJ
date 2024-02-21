@@ -1,0 +1,16 @@
+* {
+    primary-color: #dcf6f6;
+    almost-primary-color: #bcf6f6;
+    secondary-color: #4faec2;
+    tertiary-color: #0e5666;
+    quaternary-color: #003743;
+}
+
+.text-area .scroll-pane .content{
+	-fx-background-color: primary-color;
+}
+
+.text-area{
+	-fx-background-color: primary-color;
+	
+}

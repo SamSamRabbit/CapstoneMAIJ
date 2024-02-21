@@ -1,0 +1,27 @@
+* {
+    primary-color: #dcf6f6;
+    almost-primary-color: #bcf6f6;
+    secondary-color: #4faec2;
+    tertiary-color: #0e5666;
+    quaternary-color: #003743;
+}
+
+
+
+.list-cell {
+    -fx-control-inner-background: primary-color;
+}
+
+.list-view > .virtual-flow > .scroll-bar:vertical,
+.list-view > .virtual-flow > .scroll-bar:vertical > .track,
+.list-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.list-view > .virtual-flow > .scroll-bar:horizontal,
+.list-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.list-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: #003743;
+}
+
+.list-view > .virtual-flow > .scroll-bar > .increment-button, 
+.list-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}

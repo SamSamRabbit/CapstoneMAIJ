@@ -1,0 +1,34 @@
+*{
+    primary-color: #dcf6f6;
+    almost-primary-color: #bcf6f6;
+    secondary-color: #4faec2;
+    tertiary-color: #0e5666;
+    quaternary-color: #003743;
+}
+
+#dashboard-button {
+	-fx-background-color:
+	linear-gradient(#4faec2, #0e5666),
+	radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0.2), transparent);
+	-fx-text-fill: #dcf6f6;
+	-fx-font-family: "Arial";
+	-fx-font-size: 15px;
+    -fx-padding: 0, 0, 0, 0;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-border-color: quaternary-color;
+    -fx-cursor: hand;
+}
+
+#other-button{
+	-fx-background-color:
+	linear-gradient(#0e5666, #4faec2),
+	radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0.2), transparent);
+	-fx-text-fill: #dcf6f6;
+	-fx-font-family: "Arial";
+	-fx-font-size: 14px;
+    -fx-padding: 5, 5, 5, 5;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}

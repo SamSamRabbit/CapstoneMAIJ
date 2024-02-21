@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controllers.SceneImportedController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="595.0" minWidth="-Infinity" prefWidth="426.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="474.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints />
+    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="500.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TreeView fx:id="heirarchyView" onMouseClicked="#displaySourceCode" prefHeight="200.0" prefWidth="200.0" showRoot="false" GridPane.rowIndex="2" />
+      <ComboBox fx:id="versionSelector" onAction="#SwitchToVersion" prefWidth="150.0" stylesheets="@../Styles/comboBox.css" GridPane.rowIndex="1" />
+      <BorderPane fx:id="textPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #003743;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <CheckBox id="check-box" fx:id="displayToggel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#boxTicked" stylesheets="@../Styles/checkBoxStyle.css" text="Display points of interest" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></CheckBox>
+            <ComboBox id="combo-box" fx:id="metricSelector" maxWidth="1.7976931348623157E308" onAction="#metricSelected" prefWidth="150.0" promptText="Select a Metric" stylesheets="@../Styles/comboBox.css" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

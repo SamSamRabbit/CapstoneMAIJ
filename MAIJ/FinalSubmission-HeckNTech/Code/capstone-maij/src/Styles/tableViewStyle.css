@@ -1,0 +1,89 @@
+*{
+    primary-color: #dcf6f6;
+    almost-primary-color: #bcf6f6;
+    secondary-color: #4faec2;
+    tertiary-color: #0e5666;
+    quaternary-color: #003743;
+}
+
+.root{
+    -fx-background-color: primary-color;
+}
+
+/*Make some stuff invisible so it doesn't cover up the desired colours */
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+/*Column headers colour*/
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#0e5666, #4faec2),
+	radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0.2), transparent);
+}
+
+/*Column headers text */
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .filler{
+    -fx-background-color: linear-gradient(#0e5666, #4faec2),
+	radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0.2), transparent);
+}
+
+.table-view .filler .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/*Cells text */
+.table-view .table-cell{
+	
+}
+
+/*Row background colour */
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, primary-color;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+/*Change every odd numbered row's colour */
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, almost-primary-color;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+/*How selected rows look */
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+/*make unnecessary parts of scroll bars invisible */
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+

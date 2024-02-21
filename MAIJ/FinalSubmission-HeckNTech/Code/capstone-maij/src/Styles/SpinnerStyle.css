@@ -1,0 +1,41 @@
+* {
+    primary-color: #dcf6f6;
+    almost-primary-color: #bcf6f6;
+    secondary-color: #4faec2;
+    tertiary-color: #0e5666;
+    quaternary-color: #003743;
+}
+
+.root{
+    -fx-background-color: primary-color;
+}
+
+.spinner{
+	-fx-background-color: transparent;
+	-fx-body-color: linear-gradient(#0e5666, #4faec2),
+	radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0.2), transparent);
+	-fx-border-color: transparent;
+	-fx-border-width: 0;
+	-fx-height-width: 0;
+}
+
+.spinner-text{
+	-fx-text-fill: white;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button{
+    -fx-background-color: linear-gradient(#0e5666, #4faec2),
+	radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0.2), transparent);
+	-fx-border-color: transparent;
+	-fx-cursor: hand;
+}
+
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow{
+    -fx-background-color: primary-color;
+}
+
+.spinner .text-field{
+	-fx-background-color: primary-color;
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-PeterBurnett-capstoneproject-36256319d81e",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

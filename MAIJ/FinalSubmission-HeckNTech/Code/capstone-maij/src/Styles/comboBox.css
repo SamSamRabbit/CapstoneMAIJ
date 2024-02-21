@@ -1,0 +1,33 @@
+* {
+    primary-color: #dcf6f6;
+    almost-primary-color: #bcf6f6;
+    secondary-color: #4faec2;
+    tertiary-color: #0e5666;
+    quaternary-color: #003743;
+}
+
+.combo-box .list-cell 
+{
+	-fx-background-color: primary-color;
+}
+
+.combo-box .combo-box-popup .list-view .list-cell{
+	-fx-control-inner-background: primary-color;
+}
+
+.combo-box .combo-box-popup .list-view .list-cell:hover {
+	-fx-background-color: #3399FF;
+}
+
+.combo-box .combo-box-popup .list-view .list-cell:selected {
+	-fx-text-fill: black;
+}
+
+.combo-box .arrow-button{
+	-fx-background-color: linear-gradient(#0e5666, #4faec2),
+	radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0.2), transparent);
+}
+
+.combo-box .arrow-button .arrow{
+	-fx-background-color: primary-color;
+}

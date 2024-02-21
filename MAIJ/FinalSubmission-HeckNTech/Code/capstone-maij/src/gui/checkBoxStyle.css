@@ -1,0 +1,17 @@
+* {
+    primary-color: #dcf6f6;
+    almost-primary-color: #bcf6f6;
+    secondary-color: #4faec2;
+    tertiary-color: #0e5666;
+    quaternary-color: #003743;
+}
+
+.check-box .text {
+   -fx-text-fill: #FFFFFF;
+   -fx-font-weight: bold;
+   -fx-font-size: 15px;
+}
+
+.check-box .box{
+	-fx-background-color: white;
+}
